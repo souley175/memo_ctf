@@ -1,0 +1,41 @@
+DIRB result :
+
+START_TIME: Tue Apr 27 22:59:48 2021
+URL_BASE: http://138.68.182.108:32316/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://138.68.182.108:32316/ ----
++ http://138.68.182.108:32316/login (CODE:200|SIZE:1657)                                                         
++ http://138.68.182.108:32316/Login (CODE:200|SIZE:1657)                                                         
++ http://138.68.182.108:32316/register (CODE:200|SIZE:1663)                                                      
++ http://138.68.182.108:32316/static (CODE:301|SIZE:179)                                                         
+                                                                                                                 
+-----------------
+END_TIME: Tue Apr 27 23:02:54 2021
+DOWNLOADED: 4612 - FOUND: 4
+
+nikito result :
+
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          138.68.182.108
++ Target Hostname:    138.68.182.108
++ Target Port:        32316
++ Start Time:         2021-04-27 23:05:50 (GMT-4)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ Retrieved x-powered-by header: Express
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Allowed HTTP Methods: GET, HEAD 
++ OSVDB-3092: /login/: This might be interesting...
++ OSVDB-3092: /register/: This might be interesting...
++ ERROR: Error limit (20) reached for host, giving up. Last error: error reading HTTP response
++ Scan terminated:  20 error(s) and 7 item(s) reported on remote host
++ End Time:           2021-04-27 23:10:52 (GMT-4) (302 seconds)

