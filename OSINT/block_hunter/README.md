@@ -9,3 +9,5 @@ https://github.com/goerli/testnet/issues/78
 outil utile github :
 
 https://github.com/thewhiteh4t/goerli-image-hunt
+
+flag : HTB{H4v1ngFuN::W1tH-th3;d0ubl3-edg3d::Sw0Rd$$}
