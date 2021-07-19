@@ -1,0 +1,22 @@
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Sun Jul 18 12:19:44 2021
+URL_BASE: http://10.10.10.245/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://10.10.10.245/ ----
++ http://10.10.10.245/data (CODE:302|SIZE:208)                                                                     
++ http://10.10.10.245/ip (CODE:200|SIZE:17452)                                                                     
++ http://10.10.10.245/netstat (CODE:200|SIZE:29004)                                                                
+                                                                                                                   
+-----------------
+END_TIME: Sun Jul 18 12:21:45 2021
+DOWNLOADED: 4612 - FOUND: 3
+                              
