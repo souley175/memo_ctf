@@ -1,0 +1,62 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.10.233
++ Target Hostname:    10.10.10.233
++ Target Port:        80
++ Start Time:         2021-07-21 20:24:55 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.6 (CentOS) PHP/5.4.16
++ Retrieved x-powered-by header: PHP/5.4.16
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ Uncommon header 'x-generator' found, with contents: Drupal 7 (http://drupal.org)
++ OSVDB-3268: /includes/: Directory indexing found.
++ Entry '/includes/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ OSVDB-3268: /misc/: Directory indexing found.
++ Entry '/misc/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ OSVDB-3268: /modules/: Directory indexing found.
++ Entry '/modules/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ OSVDB-3268: /profiles/: Directory indexing found.
++ Entry '/profiles/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ OSVDB-3268: /scripts/: Directory indexing found.
++ Entry '/scripts/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ OSVDB-3268: /themes/: Directory indexing found.
++ Entry '/themes/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/INSTALL.mysql.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/INSTALL.pgsql.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/INSTALL.sqlite.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/install.php' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/LICENSE.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/MAINTAINERS.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/UPGRADE.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/xmlrpc.php' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=filter/tips/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=user/password/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=user/register/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=user/login/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ "robots.txt" contains 68 entries which should be manually viewed.
++ PHP/5.4.16 appears to be outdated (current is at least 7.2.12). PHP 5.6.33, 7.0.27, 7.1.13, 7.2.1 may also current release for each branch.
++ Apache/2.4.6 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.
++ OSVDB-877: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ OSVDB-3092: /web.config: ASP config file is accessible.
++ OSVDB-12184: /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-3092: /includes/: This might be interesting...
++ OSVDB-3092: /misc/: This might be interesting...
++ OSVDB-3268: /icons/: Directory indexing found.
++ OSVDB-3092: /UPGRADE.txt: Default file found.
++ OSVDB-3092: /install.php: Drupal install.php file found.
++ OSVDB-3092: /install.php: install.php file found.
++ OSVDB-3092: /LICENSE.txt: License file found may identify site software.
++ OSVDB-3092: /xmlrpc.php: xmlrpc.php was found.
++ OSVDB-3233: /INSTALL.mysql.txt: Drupal installation file found.
++ OSVDB-3233: /INSTALL.pgsql.txt: Drupal installation file found.
++ OSVDB-3233: /icons/README: Apache default file found.
++ OSVDB-3268: /sites/: Directory indexing found.
++ /.gitignore: .gitignore file found. It is possible to grasp the directory structure.
++ 26539 requests: 0 error(s) and 50 item(s) reported on remote host
++ End Time:           2021-07-21 21:59:07 (GMT-4) (5652 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

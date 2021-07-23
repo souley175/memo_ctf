@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Jul 22 12:19:19 2021 as: nmap -&#45;script vuln -sV -p 22,80 -oA nmap_vuln.txt 10.10.10.233 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script vuln -sV -p 22,80 -oA nmap_vuln.txt 10.10.10.233" start="1626970759" startstr="Thu Jul 22 12:19:19 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.233" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1626970770" endtime="1626970799"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.233" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="vulners" output="&#xa;  cpe:/a:openbsd:openssh:7.4: &#xa;    &#x9;EDB-ID:21018&#x9;10.0&#x9;https://vulners.com/exploitdb/EDB-ID:21018&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2001-0554&#x9;10.0&#x9;https://vulners.com/cve/CVE-2001-0554&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/SUSE-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/SUSE-CVE-2019-25017/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2019-25017/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/REDHAT_LINUX-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/REDHAT-OPENSHIFT-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/REDHAT-OPENSHIFT-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/OPENBSD-OPENSSH-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-AIX-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-AIX-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/GENTOO-LINUX-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/GENTOO-LINUX-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/F5-BIG-IP-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/DEBIAN-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/CENTOS_LINUX-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/AMAZON_LINUX-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/AMAZON_LINUX-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ALPINE-LINUX-CVE-2019-6111/&#x9;5.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2019-6111/&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:98FE96309F9524B8C84C508837551A19&#x9;5.8&#x9;https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97&#x9;5.8&#x9;https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:46516&#x9;5.8&#x9;https://vulners.com/exploitdb/EDB-ID:46516&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2019-6111&#x9;5.8&#x9;https://vulners.com/cve/CVE-2019-6111&#xa;    &#x9;SSH_ENUM&#x9;5.0&#x9;https://vulners.com/canvas/SSH_ENUM&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:150621&#x9;5.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:150621&#x9;*EXPLOIT*&#xa;    &#x9;MSF:AUXILIARY/SCANNER/SSH/SSH_ENUMUSERS&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/SSH/SSH_ENUMUSERS&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:45939&#x9;5.0&#x9;https://vulners.com/exploitdb/EDB-ID:45939&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2018-15919&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-15919&#xa;    &#x9;CVE-2018-15473&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-15473&#xa;    &#x9;CVE-2017-15906&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-15906&#xa;    &#x9;CVE-2016-10708&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-10708&#xa;    &#x9;1337DAY-ID-31730&#x9;5.0&#x9;https://vulners.com/zdt/1337DAY-ID-31730&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:45233&#x9;4.6&#x9;https://vulners.com/exploitdb/EDB-ID:45233&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-14145&#x9;4.3&#x9;https://vulners.com/cve/CVE-2020-14145&#xa;    &#x9;CVE-2007-2768&#x9;4.3&#x9;https://vulners.com/cve/CVE-2007-2768&#xa;    &#x9;CVE-2019-6110&#x9;4.0&#x9;https://vulners.com/cve/CVE-2019-6110&#xa;    &#x9;CVE-2019-6109&#x9;4.0&#x9;https://vulners.com/cve/CVE-2019-6109&#xa;    &#x9;CVE-2018-20685&#x9;2.6&#x9;https://vulners.com/cve/CVE-2018-20685&#xa;    &#x9;PACKETSTORM:151227&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:151227&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:46193&#x9;0.0&#x9;https://vulners.com/exploitdb/EDB-ID:46193&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-32009&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-32009&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-30937&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-30937&#x9;*EXPLOIT*"><table key="cpe:/a:openbsd:openssh:7.4">
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:21018</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2001-0554</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/SUSE-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/SUSE-CVE-2019-25017/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/REDHAT_LINUX-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/REDHAT-OPENSHIFT-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/OPENBSD-OPENSSH-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-AIX-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/GENTOO-LINUX-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/F5-BIG-IP-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/DEBIAN-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/CENTOS_LINUX-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/AMAZON_LINUX-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ALPINE-LINUX-CVE-2019-6111/</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:98FE96309F9524B8C84C508837551A19</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:46516</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-6111</elem>
+</table>
+<table>
+<elem key="type">canvas</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSH_ENUM</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:150621</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:AUXILIARY/SCANNER/SSH/SSH_ENUMUSERS</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:45939</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-15919</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-15473</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15906</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-10708</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-31730</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:45233</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-14145</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-2768</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-6110</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-6109</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-20685</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:151227</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:46193</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-32009</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-30937</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) PHP/5.4.16" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.233&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.10.10.233:80/&#xa;    Form id: user-login-form&#xa;    Form action: /?q=node&amp;destination=node&#xa;    &#xa;    Path: http://10.10.10.233:80/?q=user/password&#xa;    Form id: user-pass&#xa;    Form action: /?q=user/password&#xa;    &#xa;    Path: http://10.10.10.233:80/?q=user/register&#xa;    Form id: user-register-form&#xa;    Form action: /?q=user/register&#xa;    &#xa;    Path: http://10.10.10.233:80/?q=node&amp;amp;destination=node&#xa;    Form id: user-login-form&#xa;    Form action: /?q=node&amp;destination=node%3Famp%253Bdestination%3Dnode&#xa;    &#xa;    Path: http://10.10.10.233:80/?q=user&#xa;    Form id: user-login&#xa;    Form action: /?q=user&#xa;    &#xa;    Path: http://10.10.10.233:80/?q=node&amp;amp;destination=node%3Famp%253Bdestination%3Dnode&#xa;    Form id: user-login-form&#xa;    Form action: /?q=node&amp;destination=node%3Famp%253Bdestination%3Dnode%253Famp%25253Bdestination%253Dnode&#xa;    &#xa;    Path: http://10.10.10.233:80/?q=node&amp;amp;destination=node%3Famp%253Bdestination%3Dnode%253Famp%25253Bdestination%253Dnode&#xa;    Form id: user-login-form&#xa;    Form action: /?q=node&amp;destination=node%3Famp%253Bdestination%3Dnode%253Famp%25253Bdestination%253Dnode%25253Famp%2525253Bdestination%25253Dnode&#xa;"/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /robots.txt: Robots file&#xa;  /.gitignore: Revision control ignore file&#xa;  /UPGRADE.txt: Drupal file&#xa;  /INSTALL.txt: Drupal file&#xa;  /INSTALL.mysql.txt: Drupal file&#xa;  /INSTALL.pgsql.txt: Drupal file&#xa;  /CHANGELOG.txt: Drupal v1&#xa;  /: Drupal version 7 &#xa;  /README.txt: Interesting, a readme.&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;  /includes/: Potentially interesting folder w/ directory listing&#xa;  /misc/: Potentially interesting folder w/ directory listing&#xa;  /modules/: Potentially interesting folder w/ directory listing&#xa;  /scripts/: Potentially interesting folder w/ directory listing&#xa;  /sites/: Potentially interesting folder w/ directory listing&#xa;  /themes/: Potentially interesting folder w/ directory listing&#xa;"/><script id="http-server-header" output="Apache/2.4.6 (CentOS) PHP/5.4.16"><elem>Apache/2.4.6 (CentOS) PHP/5.4.16</elem>
+</script><script id="http-sql-injection" output="&#xa;  Possible sqli for queries:&#xa;    http://10.10.10.233:80/misc/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=N%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=M%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=S%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.10.10.233:80/misc/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-trace" output="TRACE is enabled"/><script id="vulners" output="&#xa;  cpe:/a:apache:http_server:2.4.6: &#xa;    &#x9;CVE-2021-26691&#x9;7.5&#x9;https://vulners.com/cve/CVE-2021-26691&#xa;    &#x9;CVE-2017-7679&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-7679&#xa;    &#x9;CVE-2017-3167&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-3167&#xa;    &#x9;PACKETSTORM:127546&#x9;6.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:127546&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2018-1312/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1312/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2017-15715/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15715/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/GENTOO-LINUX-CVE-2014-0226/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/GENTOO-LINUX-CVE-2014-0226/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/CENTOS_LINUX-CVE-2017-17790/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-17790/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/&#x9;6.8&#x9;https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:34133&#x9;6.8&#x9;https://vulners.com/exploitdb/EDB-ID:34133&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-35452&#x9;6.8&#x9;https://vulners.com/cve/CVE-2020-35452&#xa;    &#x9;CVE-2018-1312&#x9;6.8&#x9;https://vulners.com/cve/CVE-2018-1312&#xa;    &#x9;CVE-2017-15715&#x9;6.8&#x9;https://vulners.com/cve/CVE-2017-15715&#xa;    &#x9;CVE-2014-0226&#x9;6.8&#x9;https://vulners.com/cve/CVE-2014-0226&#xa;    &#x9;1337DAY-ID-22451&#x9;6.8&#x9;https://vulners.com/zdt/1337DAY-ID-22451&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2017-9788&#x9;6.4&#x9;https://vulners.com/cve/CVE-2017-9788&#xa;    &#x9;MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/&#x9;6.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/&#x9;6.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2019-0217&#x9;6.0&#x9;https://vulners.com/cve/CVE-2019-0217&#xa;    &#x9;EDB-ID:47689&#x9;5.8&#x9;https://vulners.com/exploitdb/EDB-ID:47689&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-1927&#x9;5.8&#x9;https://vulners.com/cve/CVE-2020-1927&#xa;    &#x9;CVE-2019-10098&#x9;5.8&#x9;https://vulners.com/cve/CVE-2019-10098&#xa;    &#x9;1337DAY-ID-33577&#x9;5.8&#x9;https://vulners.com/zdt/1337DAY-ID-33577&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2016-5387&#x9;5.1&#x9;https://vulners.com/cve/CVE-2016-5387&#xa;    &#x9;SSV:96537&#x9;5.0&#x9;https://vulners.com/seebug/SSV:96537&#x9;*EXPLOIT*&#xa;    &#x9;SSV:61874&#x9;5.0&#x9;https://vulners.com/seebug/SSV:61874&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2018-1303/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1303/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2017-15710/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15710/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/SUSE-CVE-2014-0231/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2014-0231/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-2161/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-2161/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-0736/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-0736/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2021-26690&#x9;5.0&#x9;https://vulners.com/cve/CVE-2021-26690&#xa;    &#x9;CVE-2020-1934&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-1934&#xa;    &#x9;CVE-2019-17567&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-17567&#xa;    &#x9;CVE-2019-0220&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-0220&#xa;    &#x9;CVE-2018-17199&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-17199&#xa;    &#x9;CVE-2018-1303&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-1303&#xa;    &#x9;CVE-2017-9798&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-9798&#xa;    &#x9;CVE-2017-15710&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-15710&#xa;    &#x9;CVE-2016-8743&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-8743&#xa;    &#x9;CVE-2016-2161&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-2161&#xa;    &#x9;CVE-2016-0736&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-0736&#xa;    &#x9;CVE-2015-3183&#x9;5.0&#x9;https://vulners.com/cve/CVE-2015-3183&#xa;    &#x9;CVE-2015-0228&#x9;5.0&#x9;https://vulners.com/cve/CVE-2015-0228&#xa;    &#x9;CVE-2014-3523&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-3523&#xa;    &#x9;CVE-2014-0231&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0231&#xa;    &#x9;CVE-2014-0098&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0098&#xa;    &#x9;CVE-2013-6438&#x9;5.0&#x9;https://vulners.com/cve/CVE-2013-6438&#xa;    &#x9;1337DAY-ID-28573&#x9;5.0&#x9;https://vulners.com/zdt/1337DAY-ID-28573&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-26574&#x9;5.0&#x9;https://vulners.com/zdt/1337DAY-ID-26574&#x9;*EXPLOIT*&#xa;    &#x9;SSV:87152&#x9;4.3&#x9;https://vulners.com/seebug/SSV:87152&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:127563&#x9;4.3&#x9;https://vulners.com/packetstorm/PACKETSTORM:127563&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2018-1302/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1302/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2018-1301/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1301/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/SUSE-CVE-2014-0118/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2014-0118/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/SUSE-CVE-2013-4352/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2013-4352/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/DEBIAN-CVE-2019-10092/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2019-10092/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/AMAZON-LINUX-AMI-ALAS-2014-389/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/AMAZON-LINUX-AMI-ALAS-2014-389/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ALPINE-LINUX-CVE-2014-0117/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2014-0117/&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:47688&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:47688&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-11985&#x9;4.3&#x9;https://vulners.com/cve/CVE-2020-11985&#xa;    &#x9;CVE-2019-10092&#x9;4.3&#x9;https://vulners.com/cve/CVE-2019-10092&#xa;    &#x9;CVE-2018-1302&#x9;4.3&#x9;https://vulners.com/cve/CVE-2018-1302&#xa;    &#x9;CVE-2018-1301&#x9;4.3&#x9;https://vulners.com/cve/CVE-2018-1301&#xa;    &#x9;CVE-2016-4975&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-4975&#xa;    &#x9;CVE-2015-3185&#x9;4.3&#x9;https://vulners.com/cve/CVE-2015-3185&#xa;    &#x9;CVE-2014-8109&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-8109&#xa;    &#x9;CVE-2014-0118&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-0118&#xa;    &#x9;CVE-2014-0117&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-0117&#xa;    &#x9;CVE-2013-4352&#x9;4.3&#x9;https://vulners.com/cve/CVE-2013-4352&#xa;    &#x9;1337DAY-ID-33575&#x9;4.3&#x9;https://vulners.com/zdt/1337DAY-ID-33575&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/UBUNTU-CVE-2018-1283/&#x9;3.5&#x9;https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1283/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/&#x9;3.5&#x9;https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/&#x9;3.5&#x9;https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/&#x9;3.5&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/&#x9;3.5&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/&#x9;3.5&#x9;https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2018-1283&#x9;3.5&#x9;https://vulners.com/cve/CVE-2018-1283&#xa;    &#x9;CVE-2016-8612&#x9;3.3&#x9;https://vulners.com/cve/CVE-2016-8612&#xa;    &#x9;CVE-2020-13938&#x9;2.1&#x9;https://vulners.com/cve/CVE-2020-13938&#xa;    &#x9;PACKETSTORM:140265&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:140265&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:42745&#x9;0.0&#x9;https://vulners.com/exploitdb/EDB-ID:42745&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:40961&#x9;0.0&#x9;https://vulners.com/exploitdb/EDB-ID:40961&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-601&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-601&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-2237&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-2237&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-1415&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-1415&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-1161&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-1161&#x9;*EXPLOIT*"><table key="cpe:/a:apache:http_server:2.4.6">
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-26691</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-7679</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3167</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:127546</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2018-1312/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2017-15715/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/GENTOO-LINUX-CVE-2014-0226/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/CENTOS_LINUX-CVE-2017-17790/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:34133</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-35452</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-1312</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15715</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0226</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-22451</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">6.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-9788</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-0217</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:47689</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-1927</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-10098</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-33577</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-5387</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:96537</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:61874</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2018-1303/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2017-15710/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/SUSE-CVE-2014-0231/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-2161/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-0736/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7</elem>
+</table>
+<table>
+<elem key="type">exploitpack</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2021-26690</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-1934</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-17567</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-0220</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-17199</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-1303</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-9798</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15710</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-8743</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-2161</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-0736</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-3183</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-0228</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-3523</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0231</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0098</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-6438</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-28573</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-26574</elem>
+</table>
+<table>
+<elem key="type">seebug</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:87152</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:127563</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2018-1302/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2018-1301/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/SUSE-CVE-2014-0118/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/SUSE-CVE-2013-4352/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/DEBIAN-CVE-2019-10092/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/AMAZON-LINUX-AMI-ALAS-2014-389/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ALPINE-LINUX-CVE-2014-0117/</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:47688</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-11985</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-10092</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-1302</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-1301</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-4975</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-3185</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-8109</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0118</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0117</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-4352</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-33575</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/UBUNTU-CVE-2018-1283/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/</elem>
+</table>
+<table>
+<elem key="type">metasploit</elem>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-1283</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">3.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-8612</elem>
+</table>
+<table>
+<elem key="type">cve</elem>
+<elem key="cvss">2.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-13938</elem>
+</table>
+<table>
+<elem key="type">packetstorm</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:140265</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:42745</elem>
+</table>
+<table>
+<elem key="type">exploitdb</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:40961</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-601</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-2237</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-1415</elem>
+</table>
+<table>
+<elem key="type">zdt</elem>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-1161</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="24464" rttvar="14677" to="100000"/>
+</host>
+<runstats><finished time="1626970799" timestr="Thu Jul 22 12:19:59 2021" summary="Nmap done at Thu Jul 22 12:19:59 2021; 1 IP address (1 host up) scanned in 40.10 seconds" elapsed="40.10" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
