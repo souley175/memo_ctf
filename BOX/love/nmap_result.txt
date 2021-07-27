@@ -1,0 +1,211 @@
+nmap -p- -A 10.10.10.239 -sV
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-24 12:42 EDT
+Stats: 0:00:25 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 51.77% done; ETC: 12:43 (0:00:23 remaining)
+Nmap scan report for 10.10.10.239
+Host is up (0.027s latency).
+Not shown: 65516 closed ports
+PORT      STATE SERVICE      VERSION
+80/tcp    open  http         Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1j PHP/7.3.27)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+|_http-title: Voting System using PHP
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http     Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+|_http-title: 403 Forbidden
+| ssl-cert: Subject: commonName=staging.love.htb/organizationName=ValentineCorp/stateOrProvinceName=m/countryName=in
+| Not valid before: 2021-01-18T14:00:16
+|_Not valid after:  2022-01-18T14:00:16
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+445/tcp   open  microsoft-ds Windows 10 Pro 19042 microsoft-ds (workgroup: WORKGROUP)
+3306/tcp  open  mysql?
+| fingerprint-strings: 
+|   Help, NCP, NULL, SMBProgNeg, giop: 
+|_    Host '10.10.14.11' is not allowed to connect to this MariaDB server
+5000/tcp  open  http         Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+|_http-title: 403 Forbidden
+5040/tcp  open  unknown
+5985/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+5986/tcp  open  ssl/http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+| ssl-cert: Subject: commonName=LOVE
+| Subject Alternative Name: DNS:LOVE, DNS:Love
+| Not valid before: 2021-04-11T14:39:19
+|_Not valid after:  2024-04-10T14:39:19
+|_ssl-date: 2021-07-24T17:09:31+00:00; +23m14s from scanner time.
+| tls-alpn: 
+|_  http/1.1
+7680/tcp  open  pando-pub?
+47001/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc        Microsoft Windows RPC
+49665/tcp open  msrpc        Microsoft Windows RPC
+49666/tcp open  msrpc        Microsoft Windows RPC
+49667/tcp open  msrpc        Microsoft Windows RPC
+49668/tcp open  msrpc        Microsoft Windows RPC
+49669/tcp open  msrpc        Microsoft Windows RPC
+49670/tcp open  msrpc        Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.91%I=7%D=7/24%Time=60FC4328%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.14\.11'\x20is\x20not\x20allow
+SF:ed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(Help,4A,"F\0
+SF:\0\x01\xffj\x04Host\x20'10\.10\.14\.11'\x20is\x20not\x20allowed\x20to\x
+SF:20connect\x20to\x20this\x20MariaDB\x20server")%r(SMBProgNeg,4A,"F\0\0\x
+SF:01\xffj\x04Host\x20'10\.10\.14\.11'\x20is\x20not\x20allowed\x20to\x20co
+SF:nnect\x20to\x20this\x20MariaDB\x20server")%r(NCP,4A,"F\0\0\x01\xffj\x04
+SF:Host\x20'10\.10\.14\.11'\x20is\x20not\x20allowed\x20to\x20connect\x20to
+SF:\x20this\x20MariaDB\x20server")%r(giop,4A,"F\0\0\x01\xffj\x04Host\x20'1
+SF:0\.10\.14\.11'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x
+SF:20MariaDB\x20server");
+Service Info: Hosts: www.example.com, LOVE, www.love.htb; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h08m14s, deviation: 3h30m00s, median: 23m13s
+| smb-os-discovery: 
+|   OS: Windows 10 Pro 19042 (Windows 10 Pro 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: Love
+|   NetBIOS computer name: LOVE\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-07-24T10:09:13-07:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-24T17:09:15
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 225.52 secondsdirb http://10.10.10.239/         
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Sat Jul 24 12:46:07 2021
+URL_BASE: http://10.10.10.239/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://10.10.10.239/ ----
+==> DIRECTORY: http://10.10.10.239/admin/                                                                          
+==> DIRECTORY: http://10.10.10.239/Admin/                                                                          
+==> DIRECTORY: http://10.10.10.239/ADMIN/                                                                          
++ http://10.10.10.239/aux (CODE:403|SIZE:302)                                                                      
++ http://10.10.10.239/cgi-bin/ (CODE:403|SIZE:302)                                                                 
++ http://10.10.10.239/com1 (CODE:403|SIZE:302)                                                                     
++ http://10.10.10.239/com2 (CODE:403|SIZE:302)                                                                     
++ http://10.10.10.239/com3 (CODE:403|SIZE:302)                                                                     
++ http://10.10.10.239/con (CODE:403|SIZE:302)                                                                      
+==> DIRECTORY: http://10.10.10.239/dist/                                                                           
++ http://10.10.10.239/examples (CODE:503|SIZE:402)                                                                 
+==> DIRECTORY: http://10.10.10.239/images/                                                                         
+==> DIRECTORY: http://10.10.10.239/Images/                                                                         
+==> DIRECTORY: http://10.10.10.239/includes/                                                                       
++ http://10.10.10.239/index.php (CODE:200|SIZE:4388)                                                               
++ http://10.10.10.239/licenses (CODE:403|SIZE:421)                                                                 
++ http://10.10.10.239/lpt1 (CODE:403|SIZE:302)                                                                     
++ http://10.10.10.239/lpt2 (CODE:403|SIZE:302)                                                                     
++ http://10.10.10.239/nul (CODE:403|SIZE:302)                                                                      
++ http://10.10.10.239/phpmyadmin (CODE:403|SIZE:302)                                                               
+==> DIRECTORY: http://10.10.10.239/plugins/                                                                        
++ http://10.10.10.239/prn (CODE:403|SIZE:302)                                                                      
++ http://10.10.10.239/server-info (CODE:403|SIZE:421)                                                              
++ http://10.10.10.239/server-status (CODE:403|SIZE:421)                                                            
++ http://10.10.10.239/webalizer (CODE:403|SIZE:302)                                                                
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/admin/ ----
++ http://10.10.10.239/admin/aux (CODE:403|SIZE:302)                                                                
++ http://10.10.10.239/admin/com1 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/admin/com2 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/admin/com3 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/admin/con (CODE:403|SIZE:302)                                                                
+==> DIRECTORY: http://10.10.10.239/admin/includes/                                                                 
++ http://10.10.10.239/admin/index.php (CODE:200|SIZE:6198)                                                         
++ http://10.10.10.239/admin/lpt1 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/admin/lpt2 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/admin/nul (CODE:403|SIZE:302)                                                                
++ http://10.10.10.239/admin/prn (CODE:403|SIZE:302)                                                                
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/Admin/ ----
++ http://10.10.10.239/Admin/aux (CODE:403|SIZE:302)                                                                
++ http://10.10.10.239/Admin/com1 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/Admin/com2 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/Admin/com3 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/Admin/con (CODE:403|SIZE:302)                                                                
+==> DIRECTORY: http://10.10.10.239/Admin/includes/                                                                 
++ http://10.10.10.239/Admin/index.php (CODE:200|SIZE:6198)                                                         
++ http://10.10.10.239/Admin/lpt1 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/Admin/lpt2 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/Admin/nul (CODE:403|SIZE:302)                                                                
++ http://10.10.10.239/Admin/prn (CODE:403|SIZE:302)                                                                
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/ADMIN/ ----
++ http://10.10.10.239/ADMIN/aux (CODE:403|SIZE:302)                                                                
++ http://10.10.10.239/ADMIN/com1 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/ADMIN/com2 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/ADMIN/com3 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/ADMIN/con (CODE:403|SIZE:302)                                                                
+==> DIRECTORY: http://10.10.10.239/ADMIN/includes/                                                                 
++ http://10.10.10.239/ADMIN/index.php (CODE:200|SIZE:6198)                                                         
++ http://10.10.10.239/ADMIN/lpt1 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/ADMIN/lpt2 (CODE:403|SIZE:302)                                                               
++ http://10.10.10.239/ADMIN/nul (CODE:403|SIZE:302)                                                                
++ http://10.10.10.239/ADMIN/prn (CODE:403|SIZE:302)                                                                
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/dist/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/images/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/Images/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/includes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/plugins/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/admin/includes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/Admin/includes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.10.239/ADMIN/includes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                               
+-----------------
+END_TIME: Sat Jul 24 12:54:28 2021
+DOWNLOADED: 18448 - FOUND: 47

@@ -1,0 +1,66 @@
+sudo nmap --script vuln -sV -p 443,5000 10.10.10.239
+
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-25 00:30 EDT
+Stats: 0:02:30 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 97.87% done; ETC: 00:32 (0:00:03 remaining)
+Stats: 0:02:30 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 97.87% done; ETC: 00:32 (0:00:03 remaining)
+Stats: 0:02:30 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 97.87% done; ETC: 00:32 (0:00:03 remaining)
+Nmap scan report for 10.10.10.239
+Host is up (0.025s latency).
+
+PORT     STATE SERVICE  VERSION
+443/tcp  open  ssl/http Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+|_sslv2-drown: 
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.46: 
+|       CVE-2021-26691  7.5     https://vulners.com/cve/CVE-2021-26691
+|       CVE-2020-35452  6.8     https://vulners.com/cve/CVE-2020-35452
+|       CVE-2021-30641  5.0     https://vulners.com/cve/CVE-2021-30641
+|       CVE-2021-26690  5.0     https://vulners.com/cve/CVE-2021-26690
+|       CVE-2020-9490   5.0     https://vulners.com/cve/CVE-2020-9490
+|       CVE-2020-13950  5.0     https://vulners.com/cve/CVE-2020-13950
+|_      CVE-2019-17567  5.0     https://vulners.com/cve/CVE-2019-17567
+5000/tcp open  http     Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.46: 
+|       CVE-2021-26691  7.5     https://vulners.com/cve/CVE-2021-26691
+|       CVE-2020-35452  6.8     https://vulners.com/cve/CVE-2020-35452
+|       CVE-2021-30641  5.0     https://vulners.com/cve/CVE-2021-30641
+|       CVE-2021-26690  5.0     https://vulners.com/cve/CVE-2021-26690
+|       CVE-2020-9490   5.0     https://vulners.com/cve/CVE-2020-9490
+|       CVE-2020-13950  5.0     https://vulners.com/cve/CVE-2020-13950
+|_      CVE-2019-17567  5.0     https://vulners.com/cve/CVE-2019-17567
+Service Info: Hosts: www.example.com, www.love.htb
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 337.03 seconds
