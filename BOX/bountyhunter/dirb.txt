@@ -1,0 +1,40 @@
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Mon Jul 26 20:27:05 2021
+URL_BASE: http://10.10.11.100/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://10.10.11.100/ ----
+==> DIRECTORY: http://10.10.11.100/assets/                                                                         
+==> DIRECTORY: http://10.10.11.100/css/                                                                            
++ http://10.10.11.100/index.php (CODE:200|SIZE:25169)                                                              
+==> DIRECTORY: http://10.10.11.100/js/                                                                             
+==> DIRECTORY: http://10.10.11.100/resources/                                                                      
++ http://10.10.11.100/server-status (CODE:403|SIZE:277)                                                            
+                                                                                                                   
+---- Entering directory: http://10.10.11.100/assets/ ----
+==> DIRECTORY: http://10.10.11.100/assets/img/                                                                     
+                                                                                                                   
+---- Entering directory: http://10.10.11.100/css/ ----
+                                                                                                                   
+---- Entering directory: http://10.10.11.100/js/ ----
+                                                                                                                   
+---- Entering directory: http://10.10.11.100/resources/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                   
+---- Entering directory: http://10.10.11.100/assets/img/ ----
++ http://10.10.11.100/assets/img/favicon.ico (CODE:200|SIZE:23462)                                                 
+==> DIRECTORY: http://10.10.11.100/assets/img/portfolio/                                                           
+                                                                                                                   
+---- Entering directory: http://10.10.11.100/assets/img/portfolio/ ----
+                                                                                                                   
+-----------------
+END_TIME: Mon Jul 26 20:38:20 2021
+DOWNLOADED: 27672 - FOUND: 3
