@@ -1,0 +1,51 @@
+dirb https://10.10.10.250/                                                                                130 ⨯
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Wed Jul 28 19:51:59 2021
+URL_BASE: https://10.10.10.250/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: https://10.10.10.250/ ----
+==> DIRECTORY: https://10.10.10.250/admin/                                                                         
+==> DIRECTORY: https://10.10.10.250/css/                                                                           
+==> DIRECTORY: https://10.10.10.250/host-manager/                                                                  
+==> DIRECTORY: https://10.10.10.250/icon/                                                                          
+==> DIRECTORY: https://10.10.10.250/images/                                                                        
++ https://10.10.10.250/index.html (CODE:200|SIZE:19737)                                                            
+==> DIRECTORY: https://10.10.10.250/js/                                                                            
+==> DIRECTORY: https://10.10.10.250/manager/                                                                       
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/admin/ ----
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/css/ ----
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/host-manager/ ----
+==> DIRECTORY: https://10.10.10.250/host-manager/images/                                                           
++ https://10.10.10.250/host-manager/text (CODE:401|SIZE:2044)                                                      
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/icon/ ----
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/images/ ----
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/js/ ----
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/manager/ ----
+==> DIRECTORY: https://10.10.10.250/manager/images/                                                                
++ https://10.10.10.250/manager/status (CODE:401|SIZE:2499)                                                         
++ https://10.10.10.250/manager/text (CODE:401|SIZE:2499)                                                           
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/host-manager/images/ ----
+                                                                                                                   
+---- Entering directory: https://10.10.10.250/manager/images/ ----
+                                                                                                                   
+-----------------
+END_TIME: Wed Jul 28 20:14:10 2021
+DOWNLOADED: 46120 - FOUND: 4
