@@ -1,0 +1,24 @@
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Mon Aug  2 11:04:53 2021
+URL_BASE: http://10.10.10.95:8080/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://10.10.10.95:8080/ ----
++ http://10.10.10.95:8080/aux (CODE:200|SIZE:0)                                                                    
++ http://10.10.10.95:8080/docs (CODE:302|SIZE:0)                                                                   
++ http://10.10.10.95:8080/examples (CODE:302|SIZE:0)                                                               
++ http://10.10.10.95:8080/favicon.ico (CODE:200|SIZE:21630)                                                        
++ http://10.10.10.95:8080/host-manager (CODE:302|SIZE:0)                                                           
++ http://10.10.10.95:8080/manager (CODE:302|SIZE:0)                                                                
++ http://10.10.10.95:8080/shell (CODE:302|SIZE:0)                                                                  
+                                                                                                                   
+-----------------
+END_TIME: Mon Aug  2 11:10:59 2021
+DOWNLOADED: 4612 - FOUND: 7
