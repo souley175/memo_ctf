@@ -156,3 +156,6 @@ python3 -c 'import pty; pty.spawn("/bin/sh")'
 
 # pwd interessant
 /opt/panda_search/src/main/java/com/panda_search/htb/panda_search
+
+#ssh
+woodenk:RedPandazRule

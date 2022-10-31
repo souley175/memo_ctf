@@ -1,0 +1,175 @@
+nikto -host http://mattermost.shoppy.htb/login -C all
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.11.180
++ Target Hostname:    mattermost.shoppy.htb
++ Target Port:        80
++ Start Time:         2022-10-29 23:20:44 (GMT-4)
+---------------------------------------------------------------------------
++ Server: nginx/1.23.1
++ IP address found in the 'x-version-id' header. The IP is "7.1.2.7".
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ Uncommon header 'x-request-id' found, with contents: 5enraqzkcjf4ijw613mkgquq4a
++ Uncommon header 'x-version-id' found, with contents: 7.1.2.7.1.2.c5e71b88555e841d57187938dfbf41ec.false
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ /mattermost.tgz: Potentially interesting archive/cert file found.
++ /mattermostshoppy.tar.bz2: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.pem: Potentially interesting archive/cert file found.
++ /htb.war: Potentially interesting archive/cert file found.
++ /mattermostshoppy.pem: Potentially interesting archive/cert file found.
++ /site.tar.bz2: Potentially interesting archive/cert file found.
++ /backup.tar.bz2: Potentially interesting archive/cert file found.
++ /10.10.11.180.pem: Potentially interesting archive/cert file found.
++ /backup.jks: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.tar.lzma: Potentially interesting archive/cert file found.
++ /site.tgz: Potentially interesting archive/cert file found.
++ /shoppy.jks: Potentially interesting archive/cert file found.
++ /shoppy.tar.bz2: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.tar.lzma: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.war: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.tgz: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.egg: Potentially interesting archive/cert file found.
++ /10.10.11.180.alz: Potentially interesting archive/cert file found.
++ /site.tar: Potentially interesting archive/cert file found.
++ /mattermostshoppy.tar: Potentially interesting archive/cert file found.
++ /mattermostshoppy.jks: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.cer: Potentially interesting archive/cert file found.
++ /mattermostshoppy.cer: Potentially interesting archive/cert file found.
++ /mattermost.cer: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.tar: Potentially interesting archive/cert file found.
++ /mattermostshoppy.alz: Potentially interesting archive/cert file found.
++ /mattermost.tar.lzma: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.pem: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.war: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.jks: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.tar.bz2: Potentially interesting archive/cert file found.
++ /backup.cer: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.war: Potentially interesting archive/cert file found.
++ /shoppy.alz: Potentially interesting archive/cert file found.
++ /shoppy.pem: Potentially interesting archive/cert file found.
++ /site.pem: Potentially interesting archive/cert file found.
++ /backup.alz: Potentially interesting archive/cert file found.
++ /backup.pem: Potentially interesting archive/cert file found.
++ /10.10.11.180.tar.lzma: Potentially interesting archive/cert file found.
++ /site.tar.lzma: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.tar.lzma: Potentially interesting archive/cert file found.
++ /shoppy.cer: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.tgz: Potentially interesting archive/cert file found.
++ /htb.tar.bz2: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.tar: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.tar.bz2: Potentially interesting archive/cert file found.
++ /10.10.11.180.tar: Potentially interesting archive/cert file found.
++ /htb.cer: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.tgz: Potentially interesting archive/cert file found.
++ /backup.tgz: Potentially interesting archive/cert file found.
++ /htb.tar: Potentially interesting archive/cert file found.
++ /site.jks: Potentially interesting archive/cert file found.
++ /site.war: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.jks: Potentially interesting archive/cert file found.
++ /shoppy.tgz: Potentially interesting archive/cert file found.
++ /mattermost.war: Potentially interesting archive/cert file found.
++ /mattermostshoppy.war: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.egg: Potentially interesting archive/cert file found.
++ /site.alz: Potentially interesting archive/cert file found.
++ /mattermostshoppy.egg: Potentially interesting archive/cert file found.
++ /mattermostshoppy.tgz: Potentially interesting archive/cert file found.
++ /htb.egg: Potentially interesting archive/cert file found.
++ /htb.tar.lzma: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.tar: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.tgz: Potentially interesting archive/cert file found.
++ /site.egg: Potentially interesting archive/cert file found.
++ /shoppy.tar: Potentially interesting archive/cert file found.
++ /htb.tgz: Potentially interesting archive/cert file found.
++ /site.cer: Potentially interesting archive/cert file found.
++ /backup.egg: Potentially interesting archive/cert file found.
++ /mattermost.alz: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.alz: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.jks: Potentially interesting archive/cert file found.
++ /htb.jks: Potentially interesting archive/cert file found.
++ /10.10.11.180.war: Potentially interesting archive/cert file found.
++ /mattermost.egg: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.war: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.pem: Potentially interesting archive/cert file found.
++ /10.10.11.180.egg: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.alz: Potentially interesting archive/cert file found.
++ /shoppy.egg: Potentially interesting archive/cert file found.
++ /backup.tar: Potentially interesting archive/cert file found.
++ /shoppy.tar.lzma: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.cer: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.pem: Potentially interesting archive/cert file found.
++ /htb.alz: Potentially interesting archive/cert file found.
++ /mattermostshoppyhtb.alz: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.tar.bz2: Potentially interesting archive/cert file found.
++ /mattermost.tar: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.tar: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.egg: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.jks: Potentially interesting archive/cert file found.
++ /mattermost.pem: Potentially interesting archive/cert file found.
++ /mattermostshoppy.tar.lzma: Potentially interesting archive/cert file found.
++ /backup.tar.lzma: Potentially interesting archive/cert file found.
++ /mattermost.jks: Potentially interesting archive/cert file found.
++ /10.10.11.180.tar.bz2: Potentially interesting archive/cert file found.
++ /10.10.11.180.tgz: Potentially interesting archive/cert file found.
++ /htb.pem: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.egg: Potentially interesting archive/cert file found.
++ /shoppy.war: Potentially interesting archive/cert file found.
++ /10.10.11.180.jks: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.cer: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.cer: Potentially interesting archive/cert file found.
++ /backup.war: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.tar.lzma: Potentially interesting archive/cert file found.
++ /mattermost_shoppy_htb.alz: Potentially interesting archive/cert file found.
++ /mattermost.shoppy.htb.tar.bz2: Potentially interesting archive/cert file found.
++ /10.10.11.180.cer: Potentially interesting archive/cert file found.
++ /mattermost.tar.bz2: Potentially interesting archive/cert file found.
++ /login/WEB-INF/web.xml: JRUN default file found.
+^[[C+ /login/cgi.cgi/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/webcgi/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-914/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-915/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/bin/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/mpcgi/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-bin/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/ows-bin/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-sys/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-local/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/htbin/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgibin/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgis/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/scripts/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-win/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/fcgi-bin/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-exe/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-home/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-perl/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/scgi-bin/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-bin-sdb/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi-mod/perl?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove Perl from the CGI dir.
++ /login/cgi.cgi/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/webcgi/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-914/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-915/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/bin/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/mpcgi/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-bin/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/ows-bin/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-sys/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-local/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/htbin/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgibin/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgis/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/scripts/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-win/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/fcgi-bin/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-exe/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-home/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-perl/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/scgi-bin/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-bin-sdb/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ /login/cgi-mod/perl.exe?-v: Perl is installed in the CGI directory. This essentially gives attackers a system shell. Remove perl.exe from the CGI dir.
++ 26487 requests: 0 error(s) and 162 item(s) reported on remote host
++ End Time:           2022-10-30 00:40:47 (GMT-4) (4803 seconds)                                                    
+---------------------------------------------------------------------------                                         
++ 1 host(s) tested

