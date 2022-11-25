@@ -26,4 +26,13 @@ pasword : remembermethisway
 
 # connection ssh
 username : jaeger
-password : Sh0ppyBest@pp! 
+password : Sh0ppyBest@pp!
+
+# app session
+secret : DJ7aAdnkCZs9DZWx[sudo] password for jaeger: 
+Matching Defaults entries for jaeger on shoppy:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User jaeger may run the following commands on shoppy:
+    (deploy) /home/deploy/password-manager
+

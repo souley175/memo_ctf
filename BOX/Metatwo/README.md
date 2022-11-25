@@ -43,3 +43,25 @@ result : partylikearockstar
 # ssh conection
 user : jnelson@metapress.htb
 pass : Cb4_JmWM8zUZWMu@Ys
+
+# root
+5.10.0-19-amd64 #1 SMP Debian 5.10.149-2
+
+pubring.kbx : KBXfcz�Ncz�N
+
+# root
+credentials:
+- comment: ''
+  fullname: root@ssh
+  login: root
+  modified: 2022-06-26 08:58:15.621572
+  name: ssh
+  password: !!python/unicode 'p7qfAZt4_A1xo_0x'
+- comment: ''
+  fullname: jnelson@ssh
+  login: jnelson
+  modified: 2022-06-26 08:58:15.514422
+  name: ssh
+  password: !!python/unicode 'Cb4_JmWM8zUZWMu@Ys'
+handler: passpie
+version: 1.0
