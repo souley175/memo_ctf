@@ -54,3 +54,25 @@ pass : YW5FbmdsaXNoTWFuSW5OZXdZb3JrMDI3NDY4Cg==
 
 # decode base64
 anEnglishManInNewYork027468
+
+#gitmodules file
+submodule "themes/ananke"]
+        path = themes/ananke
+        url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+
+# path interessant
+/development-machine-documentation/themes/ananke
+
+# find file .git
+find / -type d -name '.git' 2>/dev/null
+
+# path .git
+/opt/my-app/.git
+
+# git show 33a53ef9a207976d5ceceddc41a199558843bf3c
+
+# token
+-consul kv put --token bb03b43b-1d81-d62b-24b5-39540ee469b5 whackywidget/db/mysql_pw $MYSQL_PASSWORD
+
+# transfert de port local 8500
+ssh -L 8500:0.0.0.0:8500 developer@10.10.11.183
