@@ -1,0 +1,29 @@
+dirb http://soc-player.soccer.htb/ 
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Sat Jan  7 13:48:43 2023
+URL_BASE: http://soc-player.soccer.htb/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http://soc-player.soccer.htb/ ----
++ http://soc-player.soccer.htb/check (CODE:200|SIZE:31)                                                            
++ http://soc-player.soccer.htb/css (CODE:301|SIZE:173)                                                             
++ http://soc-player.soccer.htb/img (CODE:301|SIZE:173)                                                             
++ http://soc-player.soccer.htb/js (CODE:301|SIZE:171)                                                              
++ http://soc-player.soccer.htb/login (CODE:200|SIZE:3307)                                                          
++ http://soc-player.soccer.htb/Login (CODE:200|SIZE:3307)                                                          
++ http://soc-player.soccer.htb/logout (CODE:302|SIZE:23)                                                           
++ http://soc-player.soccer.htb/match (CODE:200|SIZE:10078)                                                         
++ http://soc-player.soccer.htb/signup (CODE:200|SIZE:3741)                                                         
+                                                                                                                   
+-----------------
+END_TIME: Sat Jan  7 13:56:00 2023
+DOWNLOADED: 4612 - FOUND: 9

