@@ -36,3 +36,6 @@ id,email,password,username
 # connection ssh
 user : ssh player@10.10.11.194
 pass : PlayerOftheMatch2022
+
+# root dtsat tuto
+https://exploit-notes.hdks.org/exploit/sudo-privilege-escalation/
