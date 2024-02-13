@@ -1,0 +1,194 @@
+# Nmap 7.94SVN scan initiated Wed Jan 31 11:06:46 2024 as: nmap -Pn -vvv -sC -sV -p- -oN manager_nmap.txt 10.10.11.236
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
+Nmap scan report for 10.10.11.236
+Host is up, received user-set (0.079s latency).
+Scanned at 2024-01-31 11:06:47 EST for 236s
+Not shown: 65517 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON          VERSION
+53/tcp    open  domain        syn-ack ttl 127 Simple DNS Plus
+80/tcp    open  http          syn-ack ttl 127 Microsoft IIS httpd 10.0
+|_http-title: Manager
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+88/tcp    open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2024-01-31 23:09:12Z)
+135/tcp   open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds? syn-ack ttl 127
+464/tcp   open  kpasswd5?     syn-ack ttl 127
+593/tcp   open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+1433/tcp  open  ms-sql-s      syn-ack ttl 127 Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-info: 
+|   10.10.11.236:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+|_ssl-date: 2024-01-31T23:10:42+00:00; +6h59m59s from scanner time.
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-31T09:55:32
+| Not valid after:  2054-01-31T09:55:32
+| MD5:   834d:cbf8:f987:effd:d4c8:9289:0c5d:ea37
+| SHA-1: 1d95:c295:c129:a1be:0f8f:9933:91b3:aa35:28e9:1b8a
+| -----BEGIN CERTIFICATE-----
+| MIIDADCCAeigAwIBAgIQHfwtDnVVVIJDKxe69m3u/TANBgkqhkiG9w0BAQsFADA7
+| MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+| bABsAGIAYQBjAGswIBcNMjQwMTMxMDk1NTMyWhgPMjA1NDAxMzEwOTU1MzJaMDsx
+| OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+| AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAORvrOKo
+| Gn88dkKi2pVCobtok3guw9AFoEgvFVRq7DLGAwRDeaeixP2kTRFvY7cxhTyyuw/T
+| GDTLgeQGp4S8ka0ikjtYxneYxYrMyL/GBpt1mcPELlHOhW9iXXk+54Iktr4jzWkG
+| ClBn8osj+9khboUM05/5t4ufoIob/5kZMrEhL7jyY8E3up0YvYEnzNtZI7el3AEo
+| poGMgyhCvOsVncXf9rSWi6x7oGAxH+rCNiP29TtW4/v1C+iHHzB5+2Ma511vA1w3
+| 32jY/f1FRRt5x9R2WQ62hOpWCTl0ixeWmQtx1OBZx0BmXCs3vvzlUI01gN4NoOVd
+| W9KdxRCzsllBXAUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAtsO6ax6Tsk3uqSKx
+| +dGmOevWx/yhxkvmAJpOesxVv1TziYXialathrPPGaobRE5+RL/EONbpmWAX5Xta
+| 0yTgQkZHJP+PeBIhBm6XzmjXmuSUqIvx5Co+nYvK240+PUldcuDbtf2wegc3yBcZ
+| xNFofEEtdQDawvNiNmGi4ZdsmDh2ncQJxR7EKo3DMUIji21LCdEXH08GhueaTIqA
+| lepVdz9MK472ED7tPzSEuh6qn7Gqd/iaOH35a7gDuVZ6rdGbVPz03chr1wnkfjFF
+| ib9ZMcDNhtuAEEoqexKb83+5XKPsuhl4UrKUGggEGBJCwSiRzq8cWbW7Yzlt4OeG
+| 0AAmbQ==
+|_-----END CERTIFICATE-----
+| ms-sql-ntlm-info: 
+|   10.10.11.236:1433: 
+|     Target_Name: MANAGER
+|     NetBIOS_Domain_Name: MANAGER
+|     NetBIOS_Computer_Name: DC01
+|     DNS_Domain_Name: manager.htb
+|     DNS_Computer_Name: dc01.manager.htb
+|     DNS_Tree_Name: manager.htb
+|_    Product_Version: 10.0.17763
+3268/tcp  open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: manager.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=dc01.manager.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:dc01.manager.htb
+| Issuer: commonName=manager-DC01-CA/domainComponent=manager
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-07-30T13:51:28
+| Not valid after:  2024-07-29T13:51:28
+| MD5:   8f4d:67bc:2117:e4d5:43e9:76bd:1212:b562
+| SHA-1: 6779:9506:0167:b030:ce92:6a31:f81c:0800:1c0e:29fb
+| -----BEGIN CERTIFICATE-----
+| MIIGMDCCBRigAwIBAgITXwAAAAnyIQ82Fp4XhwAAAAAACTANBgkqhkiG9w0BAQsF
+| ADBIMRMwEQYKCZImiZPyLGQBGRYDaHRiMRcwFQYKCZImiZPyLGQBGRYHbWFuYWdl
+| cjEYMBYGA1UEAxMPbWFuYWdlci1EQzAxLUNBMB4XDTIzMDczMDEzNTEyOFoXDTI0
+| MDcyOTEzNTEyOFowGzEZMBcGA1UEAxMQZGMwMS5tYW5hZ2VyLmh0YjCCASIwDQYJ
+| KoZIhvcNAQEBBQADggEPADCCAQoCggEBAK6FZPVxgTeMZrtGt8BkU233VTv/sRli
+| qkDCEGRyikhD6pf0MUk6v9l09Gp6nq93/96cpaRR+/kvtWr/YwjrF33GWwQDzkU+
+| VBVaOXkCxS4EfuFSEFSnzfkHXmhNHnKFBqZkIkLAxWGMIsfqNhWhOsEnegm8nwRX
+| 34iT2Y+evoi/2n/JvH2j/aBRMrHBXCURX6sL9hbdEbcLgxSddmmau3Tfchl0x64I
+| wUlGXx50v/WPIQ3o5knB7aYRL7slrZMy/5+d6Li4q87BE5GFg9f7qWSfusV7bdGD
+| B0yLyyZ5sRivyTd6rnSISAxLiSs9b+9b6fLUrtKM4JDyarQ86z2j/VUCAwEAAaOC
+| Az4wggM6MC8GCSsGAQQBgjcUAgQiHiAARABvAG0AYQBpAG4AQwBvAG4AdAByAG8A
+| bABsAGUAcjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDgYDVR0PAQH/
+| BAQDAgWgMHgGCSqGSIb3DQEJDwRrMGkwDgYIKoZIhvcNAwICAgCAMA4GCCqGSIb3
+| DQMEAgIAgDALBglghkgBZQMEASowCwYJYIZIAWUDBAEtMAsGCWCGSAFlAwQBAjAL
+| BglghkgBZQMEAQUwBwYFKw4DAgcwCgYIKoZIhvcNAwcwTwYJKwYBBAGCNxkCBEIw
+| QKA+BgorBgEEAYI3GQIBoDAELlMtMS01LTIxLTQwNzgzODIyMzctMTQ5MjE4Mjgx
+| Ny0yNTY4MTI3MjA5LTEwMDAwPAYDVR0RBDUwM6AfBgkrBgEEAYI3GQGgEgQQOm30
+| bCF+E0qwNjyE3ccVpoIQZGMwMS5tYW5hZ2VyLmh0YjAdBgNVHQ4EFgQUt2gOEWz4
+| cWjj7uIqK6lyCs6KVp8wHwYDVR0jBBgwFoAUOsv0Ls2JyCQ2Zo85WAYOIr8wDkww
+| gcoGA1UdHwSBwjCBvzCBvKCBuaCBtoaBs2xkYXA6Ly8vQ049bWFuYWdlci1EQzAx
+| LUNBLENOPWRjMDEsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENO
+| PVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9bWFuYWdlcixEQz1odGI/Y2Vy
+| dGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3Ry
+| aWJ1dGlvblBvaW50MIHBBggrBgEFBQcBAQSBtDCBsTCBrgYIKwYBBQUHMAKGgaFs
+| ZGFwOi8vL0NOPW1hbmFnZXItREMwMS1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5
+| JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1tYW5h
+| Z2VyLERDPWh0Yj9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlm
+| aWNhdGlvbkF1dGhvcml0eTANBgkqhkiG9w0BAQsFAAOCAQEACQf6JKTDh+L5K/Vz
+| jmyEc8OlzzW4CUrAkJx2OJDoxSiELEMcdsswqBgQR5XtJIUa4iiPZjbepPgWzyZN
+| qY5LiuuuLJdmF3GVr39Bc9/dn8LXqYX9npL5UkV0pFyiNcK5bgdRLMra3vXtjNsQ
+| 9fos0a0dSM0Z+Pc40tJFLjQ1unn5kkU9uYA/np8z0q5V1GCP2Wqm0/6+OEaZHFQw
+| 5j26ZQnOvmTaOmy+TI2Be3+PQNqUgnTODMgHr0IYuPWTy1U8nMR9NhWtdywa07A3
+| 5U81h/XKD4e21fDdv4wge+LFubtqzOqOKWXlrOXcfdc7dBdRt+tD3bIcTO63AQFC
+| A0xH1Q==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2024-01-31T23:10:42+00:00; +6h59m59s from scanner time.
+3269/tcp  open  ssl/ldap      syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: manager.htb0., Site: Default-First-Site-Name)
+|_ssl-date: 2024-01-31T23:10:42+00:00; +7h00m00s from scanner time.
+| ssl-cert: Subject: commonName=dc01.manager.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:dc01.manager.htb
+| Issuer: commonName=manager-DC01-CA/domainComponent=manager
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-07-30T13:51:28
+| Not valid after:  2024-07-29T13:51:28
+| MD5:   8f4d:67bc:2117:e4d5:43e9:76bd:1212:b562
+| SHA-1: 6779:9506:0167:b030:ce92:6a31:f81c:0800:1c0e:29fb
+| -----BEGIN CERTIFICATE-----
+| MIIGMDCCBRigAwIBAgITXwAAAAnyIQ82Fp4XhwAAAAAACTANBgkqhkiG9w0BAQsF
+| ADBIMRMwEQYKCZImiZPyLGQBGRYDaHRiMRcwFQYKCZImiZPyLGQBGRYHbWFuYWdl
+| cjEYMBYGA1UEAxMPbWFuYWdlci1EQzAxLUNBMB4XDTIzMDczMDEzNTEyOFoXDTI0
+| MDcyOTEzNTEyOFowGzEZMBcGA1UEAxMQZGMwMS5tYW5hZ2VyLmh0YjCCASIwDQYJ
+| KoZIhvcNAQEBBQADggEPADCCAQoCggEBAK6FZPVxgTeMZrtGt8BkU233VTv/sRli
+| qkDCEGRyikhD6pf0MUk6v9l09Gp6nq93/96cpaRR+/kvtWr/YwjrF33GWwQDzkU+
+| VBVaOXkCxS4EfuFSEFSnzfkHXmhNHnKFBqZkIkLAxWGMIsfqNhWhOsEnegm8nwRX
+| 34iT2Y+evoi/2n/JvH2j/aBRMrHBXCURX6sL9hbdEbcLgxSddmmau3Tfchl0x64I
+| wUlGXx50v/WPIQ3o5knB7aYRL7slrZMy/5+d6Li4q87BE5GFg9f7qWSfusV7bdGD
+| B0yLyyZ5sRivyTd6rnSISAxLiSs9b+9b6fLUrtKM4JDyarQ86z2j/VUCAwEAAaOC
+| Az4wggM6MC8GCSsGAQQBgjcUAgQiHiAARABvAG0AYQBpAG4AQwBvAG4AdAByAG8A
+| bABsAGUAcjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDgYDVR0PAQH/
+| BAQDAgWgMHgGCSqGSIb3DQEJDwRrMGkwDgYIKoZIhvcNAwICAgCAMA4GCCqGSIb3
+| DQMEAgIAgDALBglghkgBZQMEASowCwYJYIZIAWUDBAEtMAsGCWCGSAFlAwQBAjAL
+| BglghkgBZQMEAQUwBwYFKw4DAgcwCgYIKoZIhvcNAwcwTwYJKwYBBAGCNxkCBEIw
+| QKA+BgorBgEEAYI3GQIBoDAELlMtMS01LTIxLTQwNzgzODIyMzctMTQ5MjE4Mjgx
+| Ny0yNTY4MTI3MjA5LTEwMDAwPAYDVR0RBDUwM6AfBgkrBgEEAYI3GQGgEgQQOm30
+| bCF+E0qwNjyE3ccVpoIQZGMwMS5tYW5hZ2VyLmh0YjAdBgNVHQ4EFgQUt2gOEWz4
+| cWjj7uIqK6lyCs6KVp8wHwYDVR0jBBgwFoAUOsv0Ls2JyCQ2Zo85WAYOIr8wDkww
+| gcoGA1UdHwSBwjCBvzCBvKCBuaCBtoaBs2xkYXA6Ly8vQ049bWFuYWdlci1EQzAx
+| LUNBLENOPWRjMDEsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENO
+| PVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9bWFuYWdlcixEQz1odGI/Y2Vy
+| dGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3Ry
+| aWJ1dGlvblBvaW50MIHBBggrBgEFBQcBAQSBtDCBsTCBrgYIKwYBBQUHMAKGgaFs
+| ZGFwOi8vL0NOPW1hbmFnZXItREMwMS1DQSxDTj1BSUEsQ049UHVibGljJTIwS2V5
+| JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1tYW5h
+| Z2VyLERDPWh0Yj9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlm
+| aWNhdGlvbkF1dGhvcml0eTANBgkqhkiG9w0BAQsFAAOCAQEACQf6JKTDh+L5K/Vz
+| jmyEc8OlzzW4CUrAkJx2OJDoxSiELEMcdsswqBgQR5XtJIUa4iiPZjbepPgWzyZN
+| qY5LiuuuLJdmF3GVr39Bc9/dn8LXqYX9npL5UkV0pFyiNcK5bgdRLMra3vXtjNsQ
+| 9fos0a0dSM0Z+Pc40tJFLjQ1unn5kkU9uYA/np8z0q5V1GCP2Wqm0/6+OEaZHFQw
+| 5j26ZQnOvmTaOmy+TI2Be3+PQNqUgnTODMgHr0IYuPWTy1U8nMR9NhWtdywa07A3
+| 5U81h/XKD4e21fDdv4wge+LFubtqzOqOKWXlrOXcfdc7dBdRt+tD3bIcTO63AQFC
+| A0xH1Q==
+|_-----END CERTIFICATE-----
+5985/tcp  open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        syn-ack ttl 127 .NET Message Framing
+49667/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49673/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49674/tcp open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+49675/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49783/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2024-01-31T23:10:02
+|_  start_date: N/A
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 4401/tcp): CLEAN (Timeout)
+|   Check 2 (port 48068/tcp): CLEAN (Timeout)
+|   Check 3 (port 12164/udp): CLEAN (Timeout)
+|   Check 4 (port 14972/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 6h59m59s, deviation: 0s, median: 6h59m59s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 31 11:10:43 2024 -- 1 IP address (1 host up) scanned in 236.27 seconds

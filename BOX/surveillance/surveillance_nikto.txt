@@ -1,0 +1,41 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.10.11.245
++ Target Hostname:    surveillance.htb
++ Target Port:        80
++ Start Time:         2024-02-13 08:42:05 (GMT-5)
+---------------------------------------------------------------------------
++ Server: nginx/1.18.0 (Ubuntu)
++ /: Retrieved x-powered-by header: Craft CMS.
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ nginx/1.18.0 appears to be outdated (current is at least 1.20.1).
++ /cgi.cgi/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /webcgi/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-914/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-915/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /bin/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /mpcgi/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-bin/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /ows-bin/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-sys/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-local/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /htbin/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgibin/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgis/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /scripts/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-win/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /fcgi-bin/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-exe/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-home/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-perl/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /scgi-bin/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-bin-sdb/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /cgi-mod/cgiwrap/%3Cfont%20color=red%3E: cgiwrap allows HTML and possibly XSS injection. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0987
++ /web.config: ASP config file is accessible.
++ /.htaccess: Contains configuration and/or authorization information.
++ 26501 requests: 0 error(s) and 29 item(s) reported on remote host
++ End Time:           2024-02-13 09:46:18 (GMT-5) (3853 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

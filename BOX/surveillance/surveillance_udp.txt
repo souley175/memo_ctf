@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Feb 13 08:44:06 2024 as: nmap -v -sU -Pn -vvv -oN surveillance_udp.txt 10.10.11.245
+Increasing send delay for 10.10.11.245 from 50 to 100 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.11.245 from 800 to 1000 due to 11 out of 12 dropped probes since last increase.
+Nmap scan report for surveillance.htb (10.10.11.245)
+Host is up, received user-set (0.085s latency).
+Scanned at 2024-02-13 08:44:07 EST for 1009s
+Not shown: 999 closed udp ports (port-unreach)
+PORT   STATE         SERVICE REASON
+68/udp open|filtered dhcpc   no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Feb 13 09:00:56 2024 -- 1 IP address (1 host up) scanned in 1009.82 seconds

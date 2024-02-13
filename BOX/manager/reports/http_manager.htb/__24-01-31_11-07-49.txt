@@ -1,0 +1,13 @@
+# Dirsearch started Wed Jan 31 11:08:16 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://manager.htb/
+
+301   145B   http://manager.htb/js    -> REDIRECTS TO: http://manager.htb/js/
+403   312B   http://manager.htb/%2e%2e//google.com
+403   312B   http://manager.htb/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+403   312B   http://manager.htb/\..\..\..\..\..\..\..\..\..\etc\passwd
+200     5KB  http://manager.htb/about.html
+403   312B   http://manager.htb/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+200     5KB  http://manager.htb/contact.html
+301   146B   http://manager.htb/css    -> REDIRECTS TO: http://manager.htb/css/
+301   149B   http://manager.htb/images    -> REDIRECTS TO: http://manager.htb/images/
+403     1KB  http://manager.htb/images/
+403     1KB  http://manager.htb/js/
