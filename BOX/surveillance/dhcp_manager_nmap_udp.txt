@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Wed Feb 14 04:48:59 2024 as: nmap -sU -Pn -vvv -sC -sV -p 68 -oN dhcp_manager_nmap_udp.txt 10.10.11.236
+Nmap scan report for manager.htb (10.10.11.236)
+Host is up, received user-set.
+Scanned at 2024-02-14 04:48:59 EST for 119s
+
+PORT   STATE         SERVICE REASON      VERSION
+68/udp open|filtered dhcpc   no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 14 04:50:58 2024 -- 1 IP address (1 host up) scanned in 119.13 seconds
