@@ -1,0 +1,23 @@
+# Nmap 7.94SVN scan initiated Mon Feb 26 08:44:09 2024 as: nmap -Pn -vvv -sC -sV -p- -oN cozyhosting.txt 10.10.11.230
+Nmap scan report for cozyhosting.htb (10.10.11.230)
+Host is up, received user-set (0.089s latency).
+Scanned at 2024-02-26 08:44:10 EST for 174s
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 43:56:bc:a7:f2:ec:46:dd:c1:0f:83:30:4c:2c:aa:a8 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEpNwlByWMKMm7ZgDWRW+WZ9uHc/0Ehct692T5VBBGaWhA71L+yFgM/SqhtUoy0bO8otHbpy3bPBFtmjqQPsbC8=
+|   256 6f:7a:6c:3f:a6:8d:e2:75:95:d4:7b:71:ac:4f:7e:42 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHVzF8iMVIHgp9xMX9qxvbaoXVg1xkGLo61jXuUAYq5q
+80/tcp open  http    syn-ack ttl 63 nginx 1.18.0 (Ubuntu)
+|_http-title: Cozy Hosting - Home
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-favicon: Unknown favicon MD5: 72A61F8058A9468D57C3017158769B1F
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb 26 08:47:04 2024 -- 1 IP address (1 host up) scanned in 174.27 seconds
